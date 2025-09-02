@@ -173,7 +173,7 @@ const App: React.FC = () => {
                 currentSource
               )}-${isLooping}-${animationSpeed}`}
               source={currentSource}
-              autoPlay={false}
+              autoPlay={true}
               loop={isLooping}
               speed={animationSpeed}
               containerStyle={styles.lottieContainer}
