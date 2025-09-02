@@ -110,6 +110,7 @@ const App: React.FC = () => {
 
   const handleAnimationFinish = useCallback(() => {
     console.log("Animation finished");
+    setTimeout(() => Alert.alert("Animation finished " + Math.random()), Math.floor(100 + Math.random()*(1000 - 500 + 1)))
     setIsPlaying(false);
     if (!isLooping) {
       setProgress(1);
